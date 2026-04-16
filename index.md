@@ -7,7 +7,7 @@ title: HW5
 
 [The Data](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/licenses_fall2022.csv)
 
-[The Analysis]([(https://github.com/SamuelSokolovsky/SamuelSokolovsky.github.io/blob/main/is445_hw5.ipynb)])
+[The Analysis](https://github.com/SamuelSokolovsky/SamuelSokolovsky.github.io/blob/main/is445_hw5.ipynb)
 
 ## Visualization 1
 
