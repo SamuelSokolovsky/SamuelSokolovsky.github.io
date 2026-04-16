@@ -1,0 +1,19 @@
+# Site settings
+title: Samuel Sokolovsky
+description: IS 445 Data Visualization Portfolio
+repository: SamuelSokolovsky/SamuelSokolovsky.github.io
+github_username: SamuelSokolovsky
+url: "https://SamuelSokolovsky.github.io"
+baseurl: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

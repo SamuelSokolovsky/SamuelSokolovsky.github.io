@@ -1,0 +1,17 @@
+---
+layout: home
+title: Samuel Sokolovsky – IS 445 Visualizations
+---
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script>
+  function embedVegaCharts() {
+    document.querySelectorAll("vegachart").forEach(function(el) {
+      var schemaUrl = el.getAttribute("schema-url");
+      vegaEmbed(el, schemaUrl, {actions: true}).catch(console.error);
+    });
+  }
+  document.addEventListener("DOMContentLoaded", embedVegaCharts);
+</script>
