@@ -1,0 +1,8 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Run the Python notebook to generate this file.",
+  "mark": "text",
+  "encoding": {
+    "text": {"value": "Run the notebook to generate chart2.json"}
+  }
+}
