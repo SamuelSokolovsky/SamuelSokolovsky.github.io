@@ -13,12 +13,6 @@
 
         h1 {
             color: #222;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #555;
-            margin-bottom: 30px;
         }
 
         .chart-container {
@@ -37,31 +31,43 @@
             border-radius: 10px;
         }
 
-        .notebook {
-            margin-top: 30px;
+        .writeup {
+            background: white;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 1000px;
+            border-radius: 15px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+            text-align: left;
         }
 
-        .notebook a {
-            background-color: #222;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-
-        .notebook a:hover {
-            background-color: #444;
+        p {
+            line-height: 1.6;
+            color: #333;
         }
     </style>
 </head>
 <body>
 
     <h1>HW5 Data Visualization</h1>
-    <p>Below are my two interactive charts for HW5.</p>
 
     <div class="chart-container">
         <h2>Chart 1</h2>
         <iframe src="chart1.html"></iframe>
+    </div>
+
+    <div class="writeup">
+        <h3>Chart 1 Write-Up</h3>
+        <p>
+        This chart shows the number of professional licenses issued in Illinois over time, broken down by license status such as Active, Cancelled, Inactive, Not Renewed, and 
+            Terminated Card Returned, where the x-axis represents the year of original issue and the y-axis shows the number of licenses, allowing us to see trends and changes across 
+            categories over time. A line chart is used as the encoding, with time on the x-axis and counts on the y-axis, and separate lines for each status, 
+            which is effective for comparing trends across multiple groups. Different colors are used for each license status, which is appropriate because 
+            the categories are distinct, and a categorical colormap helps clearly differentiate them without implying any ranking. The data was transformed by 
+            grouping it by year and license status and then counting the number of licenses in each group, which allows the data to be visualized as a time series; 
+            no additional complex transformations were necessary beyond this aggregation. This chart is interactive allowing users to click on a status and only see that line. This helps
+            because a lot of lines are across the bottom so seeing each separately allows for complete analysis.
+        </p>
     </div>
 
     <div class="chart-container">
@@ -69,8 +75,28 @@
         <iframe src="chart2.html"></iframe>
     </div>
 
-    <div class="notebook">
-        <a href="is445_hw5.ipynb">Download Notebook</a>
+    <div class="writeup">
+        <h3>Chart 2 Write-Up</h3>
+        <p>
+        This chart displays the top 15 most common professional license types in Illinois, with the x-axis representing the number of licenses and the y-axis listing 
+            the license types, making it easy to compare which jobs have the highest counts. A horizontal bar chart is used, where bar length encodes the number
+            of licenses and categories are placed on the y-axis, which is effective for comparing values and handling longer category names. A sequential blue colormap 
+            is applied, where darker shades represent higher counts, reinforcing differences in magnitude and making the visualization easier to interpret. This type of
+            colormap is appropriate because the data is quantitative. The data was transformed by grouping by license type, counting the total number of licenses, 
+            sorting them in descending order, and selecting the top 15 categories, which simplifies the visualization and focuses attention on the most 
+            important values.
+        </p>
+    </div>
+
+    <div class="writeup">
+        <h3>Interactivity</h3>
+        <p>
+        Interactivity enhances these visualizations by allowing users to explore the data more deeply, such as hovering over elements to view exact values and 
+            better understand differences that may not be immediately clear from the visual alone. In the first chart, interactivity helps users compare trends 
+            across different license statuses more precisely by inspecting individual points, while in the second chart it allows users to quickly identify exact 
+            counts for each license type without relying solely on visual estimation. Overall, interactivity makes the charts more engaging, improves clarity, and 
+            helps users gain more detailed insights from the data.
+        </p>
     </div>
 
 </body>
